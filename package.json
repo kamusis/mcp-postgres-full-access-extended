@@ -17,7 +17,7 @@
   },
   "type": "module",
   "bin": {
-    "mcp-postgres-full-access": "dist/index.js"
+    "mcp-postgres-full-access-extended": "dist/index.js"
   },
   "files": [
     "dist"

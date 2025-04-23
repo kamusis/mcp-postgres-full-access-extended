@@ -136,7 +136,7 @@ To use this server with Claude Desktop, follow these steps:
       "command": "npx",
       "args": [
         "-y",
-        "mcp-postgres-full-access",
+        "mcp-postgres-full-access-extended",
         "postgresql://username:password@localhost:5432/database"
       ],
       "env": {
