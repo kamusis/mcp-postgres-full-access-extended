@@ -1,19 +1,19 @@
 {
   "name": "mcp-postgres-full-access-extended",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Full-access PostgreSQL server for Model Context Protocol with read/write capabilities and enhanced schema metadata",
   "license": "MIT",
   "author": "kamusis",
   "contributors": [
     "Syahiid Kamil <https://github.com/syahiidkamil>"
   ],
-  "homepage": "https://github.com/kamusis/mcp-postgres-full-access",
+  "homepage": "https://github.com/kamusis/mcp-postgres-full-access-extended",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamusis/mcp-postgres-full-access.git"
+    "url": "git+https://github.com/kamusis/mcp-postgres-full-access-extended.git"
   },
   "bugs": {
-    "url": "https://github.com/kamusis/mcp-postgres-full-access/issues"
+    "url": "https://github.com/kamusis/mcp-postgres-full-access-extended/issues"
   },
   "type": "module",
   "bin": {
