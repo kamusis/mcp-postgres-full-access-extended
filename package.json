@@ -1,6 +1,6 @@
 {
   "name": "mcp-postgres-full-access-extended",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Full-access PostgreSQL server for Model Context Protocol with read/write capabilities and enhanced schema metadata",
   "license": "MIT",
   "author": "kamusis",
