@@ -342,8 +342,9 @@ This MCP server is licensed under the MIT License.
 ## Author
 
 Created by Syahiid Nur Kamil ([@syahiidkamil](https://github.com/syahiidkamil))
+
 Extended by kamusis ([@kamusis](https://github.com/kamusis))
 
 ---
 
-Copyright © 2024 Syahiid Nur Kamil. All rights reserved.
+Copyright © 2025 kamusis. All rights reserved.
