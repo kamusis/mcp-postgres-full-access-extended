@@ -3,6 +3,8 @@
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+This project is an independently maintained and extended fork of the original [mcp-postgres-full-access](https://github.com/syahiidkamil/mcp-postgres-full-access) by Syahiid Kamil.
+
 A powerful Model Context Protocol server providing **full read-write access** to PostgreSQL databases. Unlike the read-only official MCP PostgreSQL server, this enhanced implementation allows Large Language Models (LLMs) to both query and modify database content with proper transaction management and safety controls.
 
 ## Table of Contents
