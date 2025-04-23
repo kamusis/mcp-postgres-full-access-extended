@@ -154,7 +154,7 @@ To use this server with Claude Desktop, follow these steps:
 
 When Claude attempts to commit changes to your database, Claude Desktop will prompt you for approval:
 
-![Allow Once Dialog](https://example.com/allow-once-dialog.png)
+![Allow Once Dialog](https://s2.loli.net/2025/04/23/E8OGHcSe3w1mNDt.png)
 
 **Always review the SQL changes carefully before approving them!**
 
