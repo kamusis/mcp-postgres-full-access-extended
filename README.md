@@ -21,6 +21,7 @@ A powerful Model Context Protocol server providing **full read-write access** to
   - [execute_rollback](#execute_rollback)
   - [list_tables](#list_tables)
   - [describe_table](#describe_table)
+  - [list_schemas](#list_schemas)
 - [Resources](#resources)
 - [Using with Claude Desktop](#using-with-claude-desktop)
   - [Claude Desktop Integration](#claude-desktop-integration)
@@ -108,6 +109,11 @@ A powerful Model Context Protocol server providing **full read-write access** to
   - Get detailed information about a specific table structure
   - Input: `table_name` (string): Name of the table to describe
   - Returns complete schema information including primary keys, foreign keys, indexes, and column details
+
+- **list_schemas**
+  - Get a list of all schemas in the database
+  - No input parameters required
+  - Returns an array of schemas with their names, owners, and table counts
 
 ## 📊 Resources
 

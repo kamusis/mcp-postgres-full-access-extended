@@ -14,6 +14,7 @@ import {
   handleExecuteCommit,
   handleExecuteMaintenance,
   handleListTables,
+  handleListSchemas,
   handleDescribeTable,
   handleListResources,
   handleReadResource,
@@ -291,6 +292,28 @@ server.tool(
   async (args, extra) => {
     try {
       const result = await handleListTables(pool, args.schema_name);
+      return transformHandlerResponse(result);
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: error instanceof Error ? error.message : String(error),
+          },
+        ],
+        isError: true,
+      };
+    }
+  }
+);
+
+server.tool(
+  "list_schemas",
+  "Get a list of all schemas in the database with their owners and table counts",
+  {},
+  async (args, extra) => {
+    try {
+      const result = await handleListSchemas(pool);
       return transformHandlerResponse(result);
     } catch (error) {
       return {

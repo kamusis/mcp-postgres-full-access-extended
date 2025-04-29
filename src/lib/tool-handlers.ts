@@ -402,6 +402,35 @@ export async function handleListTables(pool: pg.Pool, schemaName: string = "publ
   }
 }
 
+export async function handleListSchemas(pool: pg.Pool) {
+  const client = await pool.connect();
+  try {
+    const result = await client.query(`
+      SELECT 
+        schema_name,
+        schema_owner,
+        (SELECT COUNT(*) FROM information_schema.tables t WHERE t.table_schema = n.schema_name) as table_count
+      FROM 
+        information_schema.schemata n
+      WHERE 
+        schema_name NOT LIKE 'pg_%' 
+        AND schema_name != 'information_schema'
+      ORDER BY 
+        schema_name
+    `);
+    
+    return {
+      content: [{ 
+        type: "text", 
+        text: JSON.stringify(result.rows, null, 2)
+      }],
+      isError: false,
+    };
+  } finally {
+    safelyReleaseClient(client);
+  }
+}
+
 export async function handleDescribeTable(pool: pg.Pool, tableName: string, schemaName: string = "public") {
   if (!tableName) {
     return {
